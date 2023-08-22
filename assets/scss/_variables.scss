@@ -1,0 +1,187 @@
+// colors
+$primary:                       #00aa01 !default;
+$secondary:                     #b78832 !default;
+$success:                       #0baa4a !default;
+$danger:                        #f34747 !default;
+$info:                          #3CA4DE !default;
+$warning:                       #ff7f07 !default;
+$grey:                          #535353 !default;
+$light-grey:                    #E5E8EB !default;
+$dark-grey:                     #727A82 !default;
+$dark:                          #242121 !default;
+$black:                         #000000 !default;
+$semi-black:                    #151515 !default;
+$white:                         #ffffff !default;
+$off-white:                     #FCFCFC !default;
+$green:                         #00aa01 !default;
+$orange:                        #F3552B !default;
+$orange-dark:                   #984934 !default;
+$blue:                          #1877F2 !default;
+$light-yellow:                  #FFF9F3 !default;
+$lighter:                       #f2f2f2 !default;
+$gray-medium:                   #9F9F9F !default;
+$gray-semidark:                 #767D84 !default;
+$light:                         #C5C5C5 !default;
+$orange-light:                  #f15f54 !default;
+$primary-green: rgb(0, 170, 1);
+
+
+// theme colors
+$theme-colors: (
+  "primary":                    $primary,
+  "secondary":                  $secondary,
+  "success":                    $success,
+  "danger":                     $danger,
+  "info":                       $info,
+  "warning":                    $warning,
+  "grey":                       $grey,
+  "dark-grey":                  $dark-grey,
+  "light-grey":                 $light-grey,
+  "dark":                       $dark,
+  "black":                      $black,
+  "semi-black":                 $semi-black,
+  "white":                      $white,
+  "off-white":                  $off-white,
+  "green":                      $green,
+  "orange":                     $orange,
+  "orange-dark":                $orange-dark,
+  "blue":                       $blue,
+  "light-yellow":               $light-yellow,
+
+) !default;
+
+// font size
+$h1-font-size:                  2rem !default;
+$h2-font-size:                  1.75rem !default;
+$h3-font-size:                  1.5rem !default;
+$h4-font-size:                  1.25rem !default;
+$h5-font-size:                  1.125rem !default;
+$h6-font-size:                  1rem !default;
+$font-size-sm:                  0.875rem !default;
+$font-size-xs:                  0.75rem !default;
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+    7: $font-size-sm,
+    8: $font-size-xs,
+) !default;
+
+// font weight
+$font-weight-lighter:           200 !default;
+$font-weight-light:             300 !default;
+$font-weight-normal:            400 !default;
+$font-weight-medium:            500 !default;
+$font-weight-semibold:          600 !default;
+$font-weight-bold:              700 !default;
+$font-weight-extrabold:         800 !default;
+
+// spacing
+$spacer:                        1rem;
+$headerHt:                      125px;
+
+// container width
+$container-max-width:           1400px;
+
+// border radius
+$border-radius-no:              0 !default;
+$border-radius:                 $spacer * 0.6 !default;
+$border-radius-sm:              $spacer * 0.4 !default;
+$border-radius-lg:              $spacer * 0.8 !default;
+$border-radius-xl:              $spacer !default;
+$border-radius-pill:            $spacer * 50 !default;
+
+// Fonts
+$font-family-base:              "Quicksand", sans-serif !default;
+$font-family-secondary:         "Barlow", sans-serif !default;
+$font-family-roboto:            "Roboto", sans-serif !default;
+$font-size-base:                1.25rem !default;
+$font-size-sm:                  0.875rem !default;
+$font-size-lg:                  1.5rem !default;
+$font-size-xl:                  1.7rem !default;
+$line-height-base:              1.4;
+$font-weight-base:              400 !default;
+
+// transition
+$transition:                    all 0.25s ease-in-out;
+
+// breakpoints
+$grid-breakpoints: (
+    xxs:                        0,
+    mini:                       300px,
+    fgt:                        365px,
+    xs:                         480px,
+    sm:                         576px,
+    md:                         768px,
+    lg:                         1025px,
+    xl:                         1200px,
+    xxl:                        1440px,
+) !default;
+
+// Forms
+$input-padding-y:               $spacer * 0.6 !default;
+$input-padding-x:               $spacer !default;
+$input-font-family:             $font-family-base !default;
+$input-font-size:               $h5-font-size !default;
+$input-line-height:             1.2 !default;
+$input-bg:                      $white !default;
+$input-disabled-bg:             $input-bg !default;
+$input-focus-bg:                $input-bg !default;
+$input-focus-border-color:      tint-color($primary, 50%) !default;
+$input-focus-box-shadow:        none !default;
+$input-color:                   $dark !default;
+$input-focus-color:             $input-color !default;
+$input-border-width:            0 !default;
+$input-box-shadow:              none !default;
+$input-placeholder-color:       $grey !default;
+$input-plaintext-color:         $white !default;
+$input-height-border:           0 !default;
+$input-height-inner:            add($input-line-height * 1em, $input-padding-y * 2) !default;
+$input-height-inner-half:       add($input-line-height * .5em, $input-padding-y) !default;
+$input-height-inner-quarter:    add($input-line-height * .25em, $input-padding-y * .5) !default;
+$input-height:                  add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false)) !default;
+$input-border-radius:           $border-radius-no !default;
+$input-color:                   $white !default;
+
+// btn
+$btn-padding-y:                 $spacer * 0.6 !default;
+$btn-padding-x:                 $spacer * 2.5 !default;
+$btn-padding-x:                 $spacer * 2.5 !default;
+$btn-border-radius:             0 !default;
+$btn-border-radius-sm:          0 !default;
+$btn-border-width:              1px !default;
+$btn-font-size-md:              $font-size-lg !default;
+
+// card
+$card-bg:                       $dark !default;
+$card-border-radius:            0 !default;
+$card-border-color:             $orange-dark !default;
+$card-border-width:             0 !default;
+$card-color:                    $off-white !default;
+$card-cap-color:                $off-white !default;
+$card-group-margin:             $spacer !default;
+
+// modal
+$modal-border-radius:           0 !default;
+
+// $modal-border-radius:
+
+// box shaadow
+$box-shadow-xs: 0px 2px 5px rgba(72, 101, 129, 0.1) !default;
+$box-shadow-sm: 0px 4px 10px rgba(71, 163, 243, 0.15), 0px 2px 11px rgba(163, 183, 236, 0.21) !default;
+$box-shadow-md: 0px 4px 46px rgba(71, 163, 243, 0.15), 0px 2px 11px rgba(163, 183, 236, 0.21) !default;
+$box-shadow-lg: 0px 4px 91px rgba(255, 139, 91, 0.15), 0px 2px 50px rgba(107, 31, 0, 0.06) !default;
+$box-shadow-xl: 0px 8px 100px rgba(72, 101, 129, 0.15), 0px 4px 45px rgba(72, 101, 129, 0.08) !default;
+
+
+// object style
+$object-size-start: 5;
+$object-size-end: 1000;
+$object-sizes: "";
+@for $i from $object-size-start + 5 through $object-size-end {
+  $object-sizes: append($object-sizes, $i, comma);
+  $object-sizes: set-nth($object-sizes, 1, $object-size-start);
+}
